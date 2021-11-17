@@ -1,0 +1,23 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api-test": "npx cypress run --spec ./cypress/integration/api_test.spec.js",
+    "frontend-test": "npx cypress run --spec ./cypress/integration/frontend_test.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saudiaiway09/automation.git"
+  },
+  "author": "saudia iway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saudiaiway09/automation/issues"
+  },
+  "homepage": "https://github.com/saudiaiway09/automation#readme",
+  "devDependencies": {
+    "cypress": "^9.0.0"
+  }
+}
