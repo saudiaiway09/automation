@@ -1,8 +1,11 @@
 /// <reference types="cypress" />
 
+// Random string generator
 let randomString = Math.random().toString(36).substr(2, 5)
+
 describe('Library API', () => {
   context('POST /Library/Addbook.php', () => {
+      // This will test if the newly created book is successfully added.
       it('should add a new book', () => {
           cy.request({
               method: 'POST',
@@ -22,6 +25,7 @@ describe('Library API', () => {
       });
   });
   context('GET /Library/GetBook.php?AuthorName=Saudia Iway', () => {
+    // This test will determine if the retrieved book details has a correct data and property.
     it('should retrieve all books affiliated to the author', () => {
         cy.request({
             method: 'GET',
