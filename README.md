@@ -11,4 +11,4 @@ Setting up Local:
   - npm install
 
 Running the test:
-1. Type `npm test` to your terminal in order to run the test script.
+1. Type `npm test` in your terminal to run the test script.
